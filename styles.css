@@ -616,12 +616,12 @@ body {
 @keyframes goal-timeline-reveal {
   from {
     opacity: 0;
-    translate: var(--goal-entry-offset, -24px) 10px;
+    translate: translate(var(--goal-entry-offset, -90px) 20px) scale(0.92)
   }
 
   to {
     opacity: 1;
-    translate: 0 0;
+    transform: translate(0 0) scale(1)
   }
 }
 
@@ -630,11 +630,11 @@ body {
     .goals-section li {
       animation: goal-timeline-reveal 1s ease-out both;
       animation-timeline: view();
-      animation-range: entry 0% entry 45%;
+      animation-range: entry 0% cover 45%;
     }
 
     .goals-section li:nth-child(even) {
-      --goal-entry-offset: 24px;
+      --goal-entry-offset: 90px;
     }
   }
 }
