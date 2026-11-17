@@ -616,7 +616,7 @@ body {
 @keyframes goal-timeline-reveal {
   from {
     opacity: 0;
-    translate: translate(var(--goal-entry-offset, -90px) 20px) scale(0.92)
+    transform: translate(var(--goal-entry-offset, -90px) 20px) scale(0.92)
   }
 
   to {
